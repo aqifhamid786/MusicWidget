@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/player_background"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titletv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/play_button"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/metatv"
+        android:layout_below="@+id/titletv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignTop="@+id/titletv"
+        android:layout_alignBottom="@+id/metatv"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_play"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/stop_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/titletv"
+        android:layout_alignBottom="@+id/metatv"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_stop"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

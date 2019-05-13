@@ -208,6 +208,7 @@ public class MusicPlayerService extends Service {
                 startSelfForground(mediaName);
             }
         }
+        cursor.close();
 
     }
 
